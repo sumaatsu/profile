@@ -6,13 +6,11 @@ html {
   background-size: cover;
 }
 
-h1 {
-  line-height: 15;
-}
-
-.text-left {
+.text-center {
   text-align: center;
-  position: bottom;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 header {
@@ -29,6 +27,7 @@ header {
   width: 700px;
   margin: 0 auto;
 }
+
 .card-transparent {
   background-color: rgba(209, 209, 209, .7);
   padding: 30px;
@@ -66,7 +65,7 @@ body {
   text-align: center;
 }
 
-h2, h3 {
+h1, h2, h3 {
   color: white;
   font-family: 'Courier New', Courier, monospace;
   font-size: 48px;
@@ -97,17 +96,10 @@ ul {
   font-size: 50px;
 }
 
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
   .container {
-    width: 500px;
+    width: 400px;
   }
 }
 
